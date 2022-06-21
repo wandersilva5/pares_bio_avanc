@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:pares_bio_avanc/screens/pages/login/login_screen.dart';
 import 'package:pares_bio_avanc/services/constants.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class WelcomeScreem extends StatefulWidget {
   const WelcomeScreem({Key? key}) : super(key: key);
@@ -36,15 +37,31 @@ class _WelcomeScreemState extends State<WelcomeScreem> {
             color: kPrimaryColor,
           ),
           Column(
-            children: <Widget>[
+            children: [
               Expanded(
                 flex: 8,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Image.asset(
-                      "assets/images/nova_logo.png",
-                      width: 220,
+                    Container(
+                      alignment: Alignment.center,
+                      height: 250,
+                      width: 250,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        shape: BoxShape.circle,
+                        border: Border.all(
+                          color: Colors.black26,
+                          width: 5.0,
+                          style: BorderStyle.solid,
+                        ),
+                      ),
+                      child: SvgPicture.asset(
+                        "assets/images/logo-bio.svg",
+                        width: 220,
+                        fit: BoxFit.fitWidth,
+                        alignment: Alignment.topCenter,
+                      ),
                     ),
                     const SizedBox(height: 20),
                     const Text(

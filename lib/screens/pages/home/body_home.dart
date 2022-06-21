@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:pares_bio_avanc/components/topo_app.dart';
+import 'package:pares_bio_avanc/screens/pages/bacterias.dart';
+import 'package:pares_bio_avanc/screens/pages/dicionario.dart';
+import 'package:pares_bio_avanc/screens/pages/fungos.dart';
 import 'package:pares_bio_avanc/screens/pages/home/card_custon.dart';
-import 'package:pares_bio_avanc/screens/pages/pagina_url.dart';
+import 'package:pares_bio_avanc/screens/pages/parasitas.dart';
+import 'package:pares_bio_avanc/screens/pages/programas.dart';
+import 'package:pares_bio_avanc/screens/pages/rastreio.dart';
+import 'package:pares_bio_avanc/screens/pages/simbiose.dart';
+import 'package:pares_bio_avanc/screens/pages/virus.dart';
 
 class BodyHome extends StatelessWidget {
   const BodyHome({Key? key}) : super(key: key);
@@ -18,29 +25,53 @@ class BodyHome extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                CardCuston(text: "Dicionário", page: const PaginaUrl()),
-                CardCuston(text: "Programas Rápidos", page: const PaginaUrl()),
+                CardCuston(
+                    text: "Dicionário",
+                    image: "assets/images/dicionario.svg",
+                    page: const Dicionario()),
+                CardCuston(
+                    text: "Programas Rápidos",
+                    image: "assets/images/rapido.svg",
+                    page: const Programas()),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                CardCuston(text: "Rastrio Rapidos", page: const PaginaUrl()),
-                CardCuston(text: "Virús", page: const PaginaUrl()),
+                CardCuston(
+                    text: "Rastreio Rápido",
+                    image: "assets/images/rapido.svg",
+                    page: const Rastreio()),
+                CardCuston(
+                    text: "Vírus",
+                    image: "assets/images/virus.svg",
+                    page: const Virus()),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                CardCuston(text: "Bactérias", page: const PaginaUrl()),
-                CardCuston(text: "Fungos", page: const PaginaUrl()),
+                CardCuston(
+                    text: "Bactérias",
+                    image: "assets/images/bacteria.svg",
+                    page: const Bacterias()),
+                CardCuston(
+                    text: "Fungos",
+                    image: "assets/images/fungo.svg",
+                    page: const Fungos()),
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                CardCuston(text: "Parasitas", page: const PaginaUrl()),
-                CardCuston(text: "Simbiose", page: const PaginaUrl()),
+                CardCuston(
+                    text: "Parasitas",
+                    image: "assets/images/parasitas.svg",
+                    page: const Parasitas()),
+                CardCuston(
+                    text: "Simbiose",
+                    image: "assets/images/simbiose.svg",
+                    page: const Simbiose()),
               ],
             ),
           ],

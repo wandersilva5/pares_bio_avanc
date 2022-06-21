@@ -1,17 +1,16 @@
-// ignore_for_file: must_be_immutable
-
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:pares_bio_avanc/services/constants.dart';
 
 class CardCuston extends StatelessWidget {
   String text;
-  // Icon icon;
+  String image;
   Widget page;
 
   CardCuston({
     Key? key,
     required this.text,
-    // required this.icon,
+    required this.image,
     required this.page,
   }) : super(key: key);
 
@@ -32,7 +31,7 @@ class CardCuston extends StatelessWidget {
         margin: const EdgeInsets.all(10),
         decoration: BoxDecoration(
           color: Colors.white,
-          borderRadius: BorderRadius.circular(15),
+          borderRadius: BorderRadius.circular(5),
           boxShadow: const [
             BoxShadow(
               color: Colors.black26,
@@ -43,6 +42,7 @@ class CardCuston extends StatelessWidget {
           ],
         ),
         child: Column(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(
               text,
@@ -51,12 +51,14 @@ class CardCuston extends StatelessWidget {
                 color: textColor2,
               ),
             ),
-            Container(
-              child: const Icon(
-                Icons.access_alarm,
-                size: 50,
+            Align(
+              alignment: Alignment.bottomRight,
+              child: SvgPicture.asset(
+                image,
+                height: 70,
+                width: 70,
               ),
-            ),
+            )
           ],
         ),
       ),
