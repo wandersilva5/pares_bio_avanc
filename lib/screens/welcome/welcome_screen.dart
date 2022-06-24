@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pares_bio_avanc/screens/pages/login/login_screen.dart';
+import 'package:pares_bio_avanc/services/authenticate.dart';
 import 'package:pares_bio_avanc/services/constants.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
@@ -20,7 +20,7 @@ class _WelcomeScreemState extends State<WelcomeScreem> {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const LoginScreen(),
+            builder: (context) => const Authenticate(),
           ),
         );
       },

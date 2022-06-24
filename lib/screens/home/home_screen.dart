@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:pares_bio_avanc/screens/pages/home/body_home.dart';
-import 'package:pares_bio_avanc/screens/pages/home/menu_lateral.dart';
+import 'package:pares_bio_avanc/screens/home/body_home.dart';
+import 'package:pares_bio_avanc/screens/home/menu_lateral.dart';
 import 'package:pares_bio_avanc/services/constants.dart';
 
 // ignore: must_be_immutable

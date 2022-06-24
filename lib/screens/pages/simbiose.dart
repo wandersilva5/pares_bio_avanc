@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pares_bio_avanc/components/topo_app.dart';
-import 'package:pares_bio_avanc/screens/pages/home/menu_lateral.dart';
+import 'package:pares_bio_avanc/screens/home/menu_lateral.dart';
 
 class Simbiose extends StatelessWidget {
   const Simbiose({Key? key}) : super(key: key);

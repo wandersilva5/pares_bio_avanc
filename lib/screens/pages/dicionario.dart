@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:pares_bio_avanc/components/topo_app.dart';
 import 'package:pares_bio_avanc/models/api_pares_biomag.dart';
 import 'package:pares_bio_avanc/repository/http_service.dart';
-import 'package:pares_bio_avanc/screens/pages/home/menu_lateral.dart';
+import 'package:pares_bio_avanc/screens/home/menu_lateral.dart';
 
 class Dicionario extends StatefulWidget {
   const Dicionario({Key? key}) : super(key: key);

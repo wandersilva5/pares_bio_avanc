@@ -3,7 +3,7 @@ import 'package:pares_bio_avanc/components/topo_app.dart';
 import 'package:pares_bio_avanc/screens/pages/bacterias.dart';
 import 'package:pares_bio_avanc/screens/pages/dicionario.dart';
 import 'package:pares_bio_avanc/screens/pages/fungos.dart';
-import 'package:pares_bio_avanc/screens/pages/home/card_custon.dart';
+import 'package:pares_bio_avanc/screens/home/card_custon.dart';
 import 'package:pares_bio_avanc/screens/pages/parasitas.dart';
 import 'package:pares_bio_avanc/screens/pages/programas.dart';
 import 'package:pares_bio_avanc/screens/pages/rastreio.dart';

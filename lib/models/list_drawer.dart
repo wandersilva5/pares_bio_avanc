@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pares_bio_avanc/screens/pages/home/home_screen.dart';
+import 'package:pares_bio_avanc/screens/home/home_screen.dart';
 import 'package:pares_bio_avanc/services/constants.dart';
 
 class ListaMenu {
